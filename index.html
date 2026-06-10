@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Feast</title>
+
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Reserve</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#special">Special Dishes</a>
+        <a href="#specialmenu">Special Menu</a>
+    </nav>
+    <header id="home">
+        <h1>Roal Feast</h1>
+        <p>Welcome to Roal Feast</p>
+    </header>
+
+    <section class="hero">
+        <img src="RESTAURANT.JPG" alt="Restaruant">
+    </section>
+
+    <section class="about" id="about">
+        <h2>About our Restaruant</h2>
+        <p>
+            Welcome to Royal Feast, where elegance meets exceptional taste.
+            We offer a luxurious dining experience with freshly prepared dishes,
+            rich flavors, and a warm atmosphere. Our passion is to serve
+            high-quality cuisine that creates unforgettable memories for every guest.
+        </p>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="card">
+                <h3>Starters</h3>
+                <p>French Fries<br>
+                Garlic Bread</p>
+            </div>
+
+            <div class="card">
+                <h3>Main Course</h3>
+                <p>Feast Special Pizza<br>Panner Tikka Pizza</p>
+            </div>
+
+            <div class="card">
+                <h3>Pasta & Noodles</h3>
+                <p>White sauce pasta<br>Spicy chicken ramen</p>
+            </div>
+            <div class="card">
+                <h3>Desserts</h3>
+                <p>Chocolate lava cake<br>Brownie with icecream</p>
+            </div>
+            <div class="card">
+                <h3>Drinks</h3>
+                <p>Cold Coffee<br>Mint Mojito</p>
+            </div>
+        </div>
+    </section>
+        <section class="contact" id="contact">
+    <h2>Reserve a Table</h2>
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <input type="number" id="people" placeholder="Number of People" min="1">
+            <button type="submit">
+                Book Now
+            </button>
+        </form>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Food Gallery</h2>
+        <div class="gallery-container">
+            <img src="PIZZA.JPG" alt="Pizza">
+            <img src="BURGER.JPG" alt="Burger">
+            <img src="PASTA.JPG" alt="Pasta">
+    </div>
+    </section>
+
+    <section class="carousel" id="special">
+        <h2>Special Dishes</h2>
+        <img id="slider" src="PIZZA.JPG" alt="Food Image">
+        <div class="carousel-buttons">
+            <button onclick="previousImage()">
+                Previous
+            </button>
+            <button onclick="nextImage()">
+                Next
+            </button>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <h2>Food Joke</h2>
+        <button onclick="getJoke()">
+            Get Food Joke
+        </button>
+        <p id="joke"></p>
+    </section>
+
+    <section class="task4" id="specialmenu">
+        <h2>Our Special Menu</h2>
+        <button onclick="showAll()">All</button>
+        <button onclick="showItalian()">Italian</button>
+        <button onclick="showFastFood()">Fast Food</button>
+        <button onclick="sortPrice()">Sort by Price</button>
+        <div id="productList"></div>
+        <h2>Save Your Favorite Dish</h2>
+        <button onclick="saveFavorite('Pizza')">Pizza</button>
+        <button onclick="saveFavorite('Burger')">Burger</button>
+        <button onclick="saveFavorite('Pasta')">Pasta</button>
+        <p id="favorite"></p>
+    </section>
+
+    <section class="button-section">
+        <button onclick="showMessage()">
+            Order Now
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Feast</p>
+    </footer>
+
+    <script src="SCRIPT.js"></script>
+</body>
+</html>
